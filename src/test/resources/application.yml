@@ -1,0 +1,17 @@
+spring:
+  test:
+    database:
+      replace: any
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: h2
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  h2:
+    console:
+      enabled: true
